@@ -30,7 +30,6 @@ namespace Core.Interfaces
         ITipoPersona TipoPersonas{ get; }
         ITipoProteccion TipoProtecciones{ get; }
         IVenta Ventas{ get; }
-
         Task SaveAsync();
     }
 }
