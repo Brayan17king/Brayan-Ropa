@@ -309,14 +309,14 @@ namespace Infrastructure.UnitOfWork
             }
         }
 
+        public Task<int> SaveAsync()
+        {
+            return _context.SaveChangesAsync();
+        }
         public void Dispose()
         {
             _context.Dispose();
         }
 
-        public Task<int> SaveAsync()
-        {
-            return _context.SaveChangesAsync();
-        }
     }
 }
